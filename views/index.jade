@@ -1,0 +1,382 @@
+doctype html
+html.no-js
+  head
+    meta(charset='utf-8')
+    //if IE
+      meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    title My Website - Hello World
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width')
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800', rel='stylesheet')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/normalize.min.css')
+    link(rel='stylesheet', href='/stylesheets/font-awesome.min.css')
+    link(rel='stylesheet', href='/stylesheets/animate.css')
+    link(rel='stylesheet', href='/stylesheets/templatemo_misc.css')
+    link(rel='stylesheet', href='/stylesheets/templatemo_style.css')
+    script(src='/javascripts/vendor/modernizr-2.6.2.min.js')
+  body
+
+    #front
+      .site-header
+        .container
+          .row
+            .col-md-4.col-sm-6.col-xs-6
+              #templatemo_logo
+                h1
+                  a(rel='logo', href='http://localhost:3000', title='My Website') MyApp
+            .col-md-8.col-sm-6.col-xs-6
+              a.toggle-menu(href='#')
+                i.fa.fa-bars
+              .main-menu
+                ul
+                  li
+                    a(href='#front') Home
+                  li
+                    a(href='#services') Services
+                  li
+                    a(href='#products') Products
+                  li
+                    a(href='#contact') Contact
+          .row
+            .col-md-12
+              .responsive
+                .main-menu
+                  ul
+                    li
+                      a(href='#front') Home
+                    li
+                      a(href='#services') Services
+                    li
+                      a(href='#products') Products
+                    li
+                      a(href='#contact') Contact
+    .site-slider
+      ul.bxslider
+        li
+          img(src='/images/slider/slide1.jpg', alt='slider image 1')
+          .container
+            .row
+              .col-md-12.text-right
+                .slider-caption
+                  h2 HTML5 CSS3 Template
+        li
+          img(src='/images/slider/slide2.jpg', alt='slider image 2')
+          .container.caption-wrapper
+            .slider-caption
+              h2 Using Bootstrap Framework
+        li
+          img(src='/images/slider/slide3.jpg', alt='slider image 3')
+          .container
+            .row
+              .col-md-12.text-right
+                .slider-caption
+                  h2 Mobile Ready Website
+        li
+          img(src='/images/slider/slide4.jpg', alt='slider image 4')
+          .container
+            .row
+              .col-md-12.text-right
+                .slider-caption
+                  h2 Responsive Layout
+        li
+          img(src='/images/slider/slide5.jpg', alt='slider image 5')
+          .container
+            .row
+              .col-md-12.text-right
+                .slider-caption
+                  h2 Download and use it for free
+      .bx-thumbnail-wrapper
+        .container
+          .row
+            .col-md-12
+              #bx-pager
+                a(data-slide-index='0', href='')
+                  img(src='/images/slider/thumb1.jpg', alt='image 1')
+                a(data-slide-index='1', href='')
+                  img(src='/images/slider/thumb2.jpg', alt='image 2')
+                a(data-slide-index='2', href='')
+                  img(src='/images/slider/thumb3.jpg', alt='image 3')
+                a(data-slide-index='3', href='')
+                  img(src='/images/slider/thumb4.jpg', alt='image 4')
+                a(data-slide-index='4', href='')
+                  img(src='/images/slider/thumb5.jpg', alt='image 5')
+    ///.site-slider 
+    #services.content-section
+      .container
+        .row
+          .col-md-3.col-sm-6
+            .service-item
+              span.service-icon.first
+              h3 Easy Customization
+              p
+                | Cras congue orci at diam condimentum, in dignissim tellus elementum. Praesent id mauris eu urna vehicula rutrum sed in elit. Sed sed urna porta, viverra lacus in.
+          .col-md-3.col-sm-6
+            .service-item
+              span.service-icon.second
+              h3 Web Design
+              p
+                | Nulla in nunc elit. Etiam porttitor nibh et felis molestie fermentum. Ut quis diam porttitor, dictum dolor in, volutpat nulla. Phasellus egestas eu lacus eu pharetra.
+
+          .col-md-3.col-sm-6
+            .service-item
+              span.service-icon.third
+              h3 High Quality
+              p
+                | Sprint is free responsive
+                a(href='http://www.templatemo.com') website template
+                | using HTML5 CSS3 and Bootstrap framework. Feel free to download, edit and use it for your websites.
+          .col-md-3.col-sm-6
+            .service-item
+              span.service-icon.fourth
+              h3 Professional Design
+              p
+                | Morbi id nisi enim. Ut congue interdum pharetra facilisi. Aenean consectetur pellentesque mauris nec ornare. Nam tortor justo, rutrum ut condimentum.
+    #product-promotion.content-section
+      .container
+        .row
+          .col-md-12.text-center
+            h1.section-title New Products
+        .row
+          .col-md-2.col-sm-3
+            .item-small
+              img(src='/images/promotion/promotion1.jpg', alt='Product 1')
+              h4 Nullam Non Ultrices Arcu
+          .col-md-8.col-sm-6
+            .item-large
+              img(src='/images/promotion/promotion2.jpg', alt='Product 2')
+              .item-large-content
+                .item-header
+                  h2.pull-left Fusce facilisis semper magna
+                  span.pull-right
+                    | Rate:
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star-half-o
+                  .clearfix
+
+                p
+                  | Integer ac dui interdum, varius sem eu, vulputate ipsum. Donec fringilla, est ac hendrerit elementum, libero nulla sodales odio, a placerat urna lectus at sem. Vivamus vehicula accumsan orci a tempus. Vestibulum a augue iaculis, tincidunt lacus venenatis, aliquet ante. Sprint is
+                  a(href='#') free website template
+                  | that can be used for any purpose.
+                  br
+                  br
+                  | Aliquam iaculis lectus accumsan, egestas lorem ac, malesuada purus. Aenean in tincidunt libero. Etiam vitae dolor vel justo temllicitudin. Download
+                  a(rel='nofollow', href='http://www.templatemo.com/page/1') templates
+                  | for your websites. Sed fermentum, neque in dignissim aliquam, quam ante pellentesque quam, posuere eros purus purus. Ut non est magna.
+
+          .col-md-2.col-sm-3
+            .item-small
+              img(src='/images/promotion/promotion3.jpg', alt='Product 3')
+              h4 Morbi Sit Amet Lorem
+
+    #products.content-section
+      .container
+        .row
+          .col-md-12.text-center
+            h1.section-title All Products
+
+        .row
+          .col-md-3.col-sm-6
+            .product-item
+              .item-thumb
+                span.note
+                  img(src='/images/small_logo_1.png', alt='')
+                .overlay
+                  .overlay-inner
+                    a.view-detail(href='#nogo') Add to Cart
+
+                img(src='/images/products/product1.jpg', alt='')
+
+              h3 Nunc Consectetur
+              span
+                | Price:
+                em.text-muted $260.00
+                | -
+                em.price $180.00
+
+          .col-md-3.col-sm-6
+            .product-item
+              .item-thumb
+                span.note
+                  img(src='/images/small_logo_3.png', alt='')
+                .overlay
+                  .overlay-inner
+                    a.view-detail(href='#nogo') Add to Cart
+
+                img(src='/images/products/product2.jpg', alt='')
+
+              h3 Donec Vitae Massa
+              span
+                | Price:
+                em.text-muted $320.00
+                | -
+                em.price $240.00
+
+          .col-md-3.col-sm-6
+            .product-item
+              .item-thumb
+                span.note
+                  img(src='/images/small_logo_2.png', alt='')
+                .overlay
+                  .overlay-inner
+                    a.view-detail(href='#nogo') Add to Cart
+
+                img(src='/images/products/product3.jpg', alt='')
+ 
+              h3 Fusce Dignissim Neque
+              span
+                | Price:
+                em.text-muted $480.00
+                | -
+                em.price $340.00
+
+          .col-md-3.col-sm-6
+            .product-item
+              .item-thumb
+                span.note
+                  img(src='/images/small_logo_1.png', alt='')
+                .overlay
+                  .overlay-inner
+                    a.view-detail(href='#nogo') Add to Cart
+
+                img(src='/images/products/product4.jpg', alt='')
+
+              h3 Mauris Adipiscing Enim
+              span
+                | Price:
+                em.text-muted $260.00
+                | -
+                em.price $140.00
+
+          .col-md-3.col-sm-6
+            .product-item
+              .item-thumb
+                span.note
+                  img(src='/images/small_logo_3.png', alt='')
+                .overlay
+                  .overlay-inner
+                    a.view-detail(href='#nogo') Add to Cart
+
+                img(src='/images/products/product5.jpg', alt='')
+
+              h3 Quisque Tincidunt
+              span
+                | Price:
+                em.text-muted $350.00
+                | -
+                em.price $220.00
+
+          .col-md-3.col-sm-6
+            .product-item
+              .item-thumb
+                span.note
+                  img(src='/images/small_logo_1.png', alt='')
+                .overlay
+                  .overlay-inner
+                    a.view-detail(href='#nogo') Add to Cart
+
+                img(src='/images/products/product6.jpg', alt='')
+
+              h3 Aliquam Malesuada
+              span
+                | Price:
+                em.text-muted $470.00
+                | -
+                em.price $330.00
+
+          .col-md-3.col-sm-6
+            .product-item
+              .item-thumb
+                span.note
+                  img(src='/images/small_logo_2.png', alt='')
+                .overlay
+                  .overlay-inner
+                    a.view-detail(href='#nogo') Add to Cart
+
+                img(src='/images/products/product7.jpg', alt='')
+
+              h3 Sed Eleifend Tortor
+              span
+                | Price:
+                em.text-muted $620.00
+                | -
+                em.price $460.00
+
+          .col-md-3.col-sm-6
+            .product-item
+              .item-thumb
+                span.note
+                  img(src='/images/small_logo_3.png', alt='')
+                .overlay
+                  .overlay-inner
+                    a.view-detail(href='#nogo') Add to Cart
+
+                img(src='/images/products/product8.jpg', alt='')
+
+              h3 Integer tincidunt
+              span
+                | Price:
+                em.text-muted $840.00
+                | -
+                em.price $720.00
+
+    #contact.content-section
+      .container
+        .row
+          .col-md-12.text-center
+            h1.section-title Contact Us
+
+        .row
+          .col-md-offset-2.col-md-8.text-center.bigger-text
+            p
+              | templatemo provides a lot of
+              a(href='http://www.templatemo.com/page/1') free website templates
+              | for everyone. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, itaque vero facere laudantium voluptas temporibus mollitia nisi deleniti illo minima quisquam corporis possimus nesciunt.
+          .col-md-6.col-sm-6
+            #map
+
+          .col-md-6.col-sm-6
+            .row.contact-form
+              fieldset.col-md-6.col-sm-6
+                input#name(type='text', name='name', placeholder='Name')
+              fieldset.col-md-6.col-sm-6
+                input#email(type='email', name='email', placeholder='Email')
+              fieldset.col-md-12
+                input#subject(type='text', name='subject', placeholder='Subject')
+              fieldset.col-md-12
+                textarea#comments(name='comments', placeholder='Message')
+              fieldset.col-md-12
+                input#submit.button(type='submit', name='send', value='Send Message')
+
+    .site-footer
+      .container
+        .row
+          .col-md-6.col-sm-6
+            span
+              | Copyright © 2084
+              a(href='#') Company Name
+
+          .col-md-6.col-sm-6
+            ul.social
+              li
+                a.fa.fa-facebook(href='#')
+              li
+                a.fa.fa-twitter(href='#')
+              li
+                a.fa.fa-instagram(href='#')
+              li
+                a.fa.fa-linkedin(href='#')
+              li
+                a.fa.fa-rss(href='#')
+
+    script(src='/javascripts/vendor/jquery-1.10.1.min.js')
+    script
+      window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\\/script>')
+    script(src='/javascripts/jquery.easing-1.3.js')
+    script(src='/javascripts/bootstrap.js')
+    script(src='/javascripts/plugins.js')
+    script(src='/javascripts/main.js')
+
